@@ -1,5 +1,5 @@
-ProjectTitle: sirius-crypto-club
+ProjectTitle: 100-platkov
 
 PageList:
-- file: page.html
+- file: index.html
   ready: 50

@@ -1,0 +1,52 @@
+.header
+	max-height: 90px
+	width: 100%
+	padding: 15px 0
+	background: #ffffff
+	+r(320)
+		height: 60px
+		padding: 6px
+	img
+		width: 60px
+		height: 60px
+		+r(320)
+			width: 48px
+			height: 48px
+	&__logo, &__title
+		display: flex
+	&__logo
+		margin-right: 5px
+		+r(320)
+			margin-right: -27px
+	&__title
+		flex-direction: column
+		max-width: 157px
+		line-height: 0.01em
+		height: 100%
+		width: 100%
+		padding-left: 15px
+		margin-top: -5px
+		+r(320)
+			margin-top: 0
+			padding-left: 42px
+		&_big, &_litle
+			letter-spacing: 0.01em
+			text-align: left
+		&_big
+			font-size: 18px
+			font-family: $second-font
+			color: #141516
+			line-height: 22px
+			+r(320)
+				font-size: 16px
+				line-height: 14px
+		&_litle
+			font-size: 10px
+			text-transform: uppercase
+			color: #5d6770
+			line-height: 10px
+			font-family: $default-font
+			+r(320)
+				font-size: 9px
+				line-height: 8px
+

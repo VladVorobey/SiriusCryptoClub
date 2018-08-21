@@ -1,0 +1,202 @@
+.main
+	width: 100%
+	position: relative
+	background: #ffffff url('../img/bg.png') repeat-x center
+	padding-top: 170px
+	margin-bottom: 352px
+	+r(992)
+		padding-top: 27px
+		margin-bottom: 50px
+	+r(540)
+		margin-bottom: 0
+	.container
+		padding: 0
+		+rmin(1200)
+			max-width: 1170px
+	&__title
+		padding-top: 117px
+		padding-bottom: 35px
+		+r(992)
+			padding-top: 0px
+			text-align: center
+			padding-bottom: 15px
+		h2
+			font-size: 60px
+			line-height: 72px
+			font-family: $third-font
+			text-transform: uppercase
+			letter-spacing: 0
+			+r(1200)
+				font-size: 48px
+				line-height: 60px
+			+r(992)
+				margin-bottom: 20px
+				font-size: 48px
+				line-height: 60px
+			+r(540)
+				font-size: 36px
+				line-height: 48px
+			+r(370)
+				font-size: 22px
+				line-height: 28px
+				margin-bottom: 10px
+				letter-spacing: 0em
+		&_strong
+			font-family: $fourth-font
+		&_scroll
+			display: none
+			width: 45px
+			height: 45px
+			margin: 0 auto
+			+r(992)
+				display: block
+
+	&__buttons
+		display: flex
+		flex-direction: row
+		margin-bottom: 120px
+		margin-top: -194px
+		+r(992)
+			margin-top: 0px
+			margin-bottom: 80px
+			padding-top: 75px
+			flex-direction: column
+			align-items: center
+		+r(320)
+			padding-top: 72px
+			margin-bottom: 51px
+		a
+			display: inline-block
+			width: 200px
+			height: 60px
+			padding: 18px 0
+			text-align: center
+			font-family: $fifth-font
+			border: 2px solid rgb(255, 89, 31)
+			margin-right: 30px
+			border-radius: 8px
+			font-size: 18px
+			background-color: rgb(255, 89, 31)
+			box-shadow: 10px 17px 50px 0px rgba(255, 100, 31, 0.6)
+			color: #ffffff
+			transition: all 0.3s ease-out
+			+r(992)
+				width: 175px
+				height: 50px
+				padding: 14px
+				font-size: 14px
+				font-family: $second-font
+				margin-right: 0
+				margin-bottom: 30px
+				&:last-child
+					width: 135px
+					height: 40px
+					padding: 10px
+					font-size: 14px
+				&:hover
+					margin-top: 2px
+					margin-bottom: 28px
+			&:hover
+				margin-top: 2px
+				margin-bottom: -2px
+				box-shadow: 10px 17px 70px 0 rgba(255, 100, 31, 0.7)
+				transition: all 0.3s ease-out
+			&:last-child
+				color: #303c47
+				box-shadow: none
+				background: transparent
+				border: 2px solid #bdc9d4
+				&:hover
+					box-shadow: 10px 17px 50px 0 rgba(0, 0, 0, 0.1)
+		&_orange
+			color: #ff591f
+			display: none
+			+r(992)
+				display: inline
+	p
+		font-size: 16px
+		color: #5d6770
+		padding-left: 210px
+		max-width: 500px
+		display: block
+		+r(992)
+			padding-left: 0
+			text-align: center
+			margin: 0 auto
+			display: block
+			width: 220px
+			font-size: 13px
+			margin-bottom: 54px
+		+r(320)
+			line-height: 17px
+			letter-spacing: 0.01em
+		&:before
+			content: '*'
+			position: absolute
+			left: 210px
+			color: #ff591f
+			+r(992)
+				display: none
+		&:after
+			content: ''
+			width: 150px
+			height: 1px
+			background: #ced3d7
+			position: absolute
+			left: 15px
+			+r(992)
+				display: none
+				width: 0
+				height: 0
+	&__book-section
+
+		position: relative
+		img
+			margin-left: 25px
+			box-shadow: 20px 20px 40px -15px rgba(0,0,0,.6);
+			+r(992)
+				margin-left: 50%
+				transform: translateX(-50%)
+			+r(768)
+				width: 88%
+
+.blue-triangle
+	position: absolute
+	left: -50px
+	bottom: -130px
+	width: 625px
+	height: 625px
+	+r(1200)
+		left: 0
+		bottom: -160px
+	+r(992)
+		left: 50px
+		bottom: 90px
+	+r(768)
+		top: 0
+		left: 0
+		transform: scale(0.8)
+	+r(540)
+		left: -100px
+		transform: scale(0.62)
+		top: -60px
+	+r(380)
+		left: -140px
+		top: -125px
+
+.footer
+	width: 100%
+	text-align: center
+	padding: 35px 0
+	position: relative
+	+r(992)
+		border-top: 1px solid #ced3d7
+		padding: 20px 0
+	&__copyright
+		width: 100%
+		font-size: 18px
+		color: #5d6770
+		font-family: $sixth-font
+		+r(992)
+			font-size: 14px
+
